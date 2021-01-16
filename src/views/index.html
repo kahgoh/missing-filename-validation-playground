@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Hello There!</title>
+  </head>
+  <body>
+    <div>
+      {{#unless attachments}}
+        No attachments have been uploaded!
+      {{/unless}}
+      {{#if attachments}}
+        Attachments uploaded:
+        <ol>
+          {{#each attachments}}
+            <li>{{{this}}}</li>
+          {{/each}}
+        </ol>
+      {{/if}}
+    </div>
+
+    <hr />
+
+    <div>
+      <form action="attachments" enctype="multipart/form-data" method="post">
+        <label>Add File:
+          <input name="attachment" type="file"></input>
+        </label>
+        <input type="submit" value="Upload" />
+      </form>
+    </div>
+  </body>
+</html>
