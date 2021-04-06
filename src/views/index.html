@@ -11,6 +11,8 @@
         Attachments uploaded:
         <ol>
           {{#each attachments}}
+            {{! NOTE: This turns off HTML escaping for demonstration. It's
+              unlikely you'll want to do this in your own projects. }}
             <li>{{{this}}}</li>
           {{/each}}
         </ol>
