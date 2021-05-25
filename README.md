@@ -1,5 +1,5 @@
 # Missing Filename Validation Playground
-This project was created for [The Importance of Validating Filenames](https://kahdev.hashnode.dev/the-importance-of-validating-filenames). It is a node-expressjs app with a single page presenting a list of uploaded files (without validating the filename). 
+This project was created to use a sandbox to experiment with receiving a file upload in Noode and ExpressJS. It is a node-expressjs app with a single page presenting a list of uploaded files (without validating the filename). 
 
 ## Running
 After cloning or downloading and unzipping:
